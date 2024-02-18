@@ -31,4 +31,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: Jet-Engine/devspace-rust-container:latest
+          tags: jet-engine/devspace-rust-container:latest

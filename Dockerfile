@@ -9,4 +9,5 @@ RUN apt update && apt upgrade -y &&\
  cargo install -f cargo-watch\
  cargo-edit cargo-deny\
  cargo-upgrades cargo-criterion\
- cargo-udeps
+ cargo-udeps &&\
+ rm -rf ~/.cargo/registry
