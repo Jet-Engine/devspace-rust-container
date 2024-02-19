@@ -5,6 +5,7 @@ LABEL org.opencontainers.image.description="JetEngine's DevSpace Container for c
 RUN apt update && apt upgrade -y &&\
  apt install cmake python3-pip -y &&\
  apt clean &&\
+ pip3 install virtualenv &&\
  rustup self update &&\
  rustup update stable &&\
  rustup default stable &&\
