@@ -3,7 +3,7 @@ LABEL authors="JetEngine Tech"
 LABEL org.opencontainers.image.description="JetEngine's DevSpace Container for cutting edge Rust project development. - Latest Stable Compiler"
 
 RUN apt update && apt upgrade -y &&\
- apt install cmake python3-pip -y &&\
+ apt install cmake libclang-dev postgresql-client python3-pip -y &&\
  apt clean &&\
  pip3 install virtualenv &&\
  rustup self update &&\
